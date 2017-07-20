@@ -1,0 +1,240 @@
+@import 'fonts';
+@import 'mixin';
+@import 'media';
+
+body{
+	margin: 0;
+}
+ul{
+	padding-left: 0;
+}
+.wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+	
+}
+
+//			header
+.header{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	
+	&__logo{
+		font-family: quite;
+		color:  #ffffff;
+		font-size: 84px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 400;
+		margin-left: 87px;
+		margin-top: 37px;
+		letter-spacing: 0;	
+	}
+	&__nav{
+			margin-left: 183px;
+			margin-top:56px; 
+		&__item{
+			font-family: MonseBold;
+			color:  #ffffff;
+			font-size: 18px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 100;
+			display: inline-block;
+			cursor: pointer;
+			padding: 11px;
+			transition: 0.5s;
+			border-radius: 5px;
+			margin-right: 3px;
+			
+			&:hover{
+				border-radius: 5px;
+				background-color:  #130e27;
+				
+			}
+		}
+	}
+}
+
+//end header
+
+
+.content{
+	&__wrapper{
+		max-width: 1200px;
+		min-height: 688px;
+		background-image: url(../image/wrapper.jpg);
+		&__text{
+			display: flex;
+			flex-direction: column;
+			margin: 0;
+			margin-left: 100px;
+			
+			&__item-first{
+				font-family:  MonseBold;
+				color:  #130e27;
+				font-size: 86px;/* Приближение из-за подстановки шрифтов */
+				font-weight: 700;
+				line-height: 50px;
+				margin-top: 270px;
+				letter-spacing: 1px;
+				
+			}
+			&__item-second{
+				font-family:  MonseBold;
+				color:  white;
+				font-size: 90px;/* Приближение из-за подстановки шрифтов */
+				font-weight: 700;
+				
+			}
+			&__item-third{
+				font-family: PTs;
+				color:  #ffffff;
+				font-size: 20px;/* Приближение из-за подстановки шрифтов */
+				font-weight: 400;
+				line-height: 28px;/* Приближение из-за подстановки шрифтов */
+				text-align: left;
+				width: 500px;
+				margin-top: 20px;
+			}
+		}
+	}
+	&__form{
+		position: absolute;
+		margin-top: -280px;
+		margin-left: 695px;
+	}
+	.form{
+		border-radius: 5px;
+		background-color:  #ffffff;
+		box-shadow: 2px 4px 31.92px 6.08px rgba(137, 137, 137, 0.71);
+		width: 400px;
+		height: 492px;
+		text-align: center;
+		padding-top: 28px;
+		&__text{
+			font-family: MonseReg;
+			color:  #130e27;
+			font-size: 22px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 400;
+			text-align: center;
+			margin-right: 14px;
+			
+		}
+		&__name{
+			@include input
+			}
+		&__email{
+			@include input;
+			margin-top: 10px;
+			
+		}
+		&__phone{
+			@include input;
+			margin-top: 10px;
+		}
+		&__country{
+			@include input;
+			margin-top: 10px;
+		}
+	
+		&__label{
+			display: block;
+		}
+			
+		}
+
+	}
+
+
+.content__pricing{
+	background-color:  #efefef;
+	width: 1200px;
+	height: 537px;
+	margin-top: 100px;
+	padding-top: 100px;
+	&__text{
+		font-family: MonseBold;
+		color:  #130e27;
+		font-size: 50px;/* Приближение из-за подстановки шрифтов */
+		font-weight: 700;
+		line-height: 80px;/* Приближение из-за подстановки шрифтов */
+		text-align: center;
+		
+	}
+	&__item{
+		border-radius: 5px;
+		background-color:  #ffffff;
+		width: 318px;
+		height: 389px;
+		display: inline-block;
+		position: absolute;
+	}
+	.starter{
+		margin-left: 100px;
+	
+		&__text{
+			font-family: PTs;
+			color:  #161616;
+			font-size: 22px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 400;
+			line-height: 28px;/* Приближение из-за подстановки шрифтов */
+			text-align: center;
+		}
+		&__text-last{
+			font-family: MonseBold;
+			color:  #c62314;
+			font-size: 60px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 700;
+			line-height: 80px;/* Приближение из-за подстановки шрифтов */
+			text-align: center;
+			
+		}
+		&__item{
+			list-style-type: none;
+			text-align: center;
+			font-family: PTs;
+			color:  #161616;
+			font-size: 20px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 400;
+			line-height: 28px;/* Приближение из-за подстановки шрифтов */
+			text-align: center;
+		}
+		&__button{
+			border-radius: 4px;
+			background-color:  #130e27;
+			width: 205px;
+			height: 49px;
+			color: white;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			position: relative;
+			left: 50%;
+			margin-left: -102px;
+			
+		}
+	}
+	.business{
+		margin-left: 440px;
+	}
+	.professional{
+		margin-left: 776px;
+	}
+	
+}
+
+
+.clas1{
+	color: red;
+	.calass2{
+		color: black;
+		.class3{
+			color: rebeccapurple;
+		}
+	}
+}
+.footer{
+	&__wrapper{
+		
+	}
+}
+

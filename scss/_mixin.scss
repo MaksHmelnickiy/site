@@ -1,0 +1,33 @@
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }  
+}
+
+
+@mixin input{
+			border: none;
+			outline: none;
+			border-radius: 5px;
+			background-color:  #eeeeee;
+			width: 333px;
+			height: 57px;
+			padding-left: 20px;
+			margin-top: 33px;
+			color:  black;
+			font-size: 20px;/* Приближение из-за подстановки шрифтов */
+			font-weight: 400;
+			line-height: 25px;/* Приближение из-за подстановки шрифтов */
+			text-align: left;
+			@include placeholder {
+				color:  #b5b5b5;
+				font-size: 20px;/* Приближение из-за подстановки шрифтов */
+				font-weight: 400;
+				line-height: 25px;/* Приближение из-за подстановки шрифтов */
+				text-align: left;
+}
+	:hover{
+		background-color: red;
+	}
+}
